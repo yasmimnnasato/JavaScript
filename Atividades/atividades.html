@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividades</title>
     <script src="script.js"></script>
 </head>
+
 <body>
-    
+
     <h3>Atividade 1</h3>
     <p>Exibir uma mensgame ao carregar a minha pagina usando alert</p>
 
@@ -17,6 +19,44 @@
 
     <h3> Atividade 3</h3>
     <p>Criar calculadora</p>
-<button onclick="realizarCalculos()">Realizar cálculos</button>
+    <button onclick="realizarCalculos()">Realizar cálculos</button>
+
+    <h2>Calculadora</h2>
+    <button onclick=" limpar()">C</button>
+    <button onclick="">()</button>
+    <button onclick="">%</button>
+    <button onclick="guardarOperacao('/')">/</button>
+    <br />
+    <button onclick="guardarNumero('7')">7</button>
+    <button onclick="guardarNumero('8')">8</button>
+    <button onclick="guardarNumero('9')">9</button>
+    <button onclick="guardarOperacao('*')">*</button>
+    <br />
+    <button onclick="guardarNumero('4')">4</button>
+    <button onclick="guardarNumero('5')">5</button>
+    <button onclick="guardarNumero('6')">6</button>
+    <button onclick="guardarOperacao('-')">-</button>
+    <br />
+    <button onclick="guardarNumero('1')">1</button>
+    <button onclick="guardarNumero('2')">2</button>
+    <button onclick="guardarNumero('3')">3</button>
+    <button onclick="guardarOperacao('+')">+</button>
+    <br />
+    <button onclick="">+/-</button>
+    <button onclick="guardarNumero('0')">0</button>
+    <button onclick="guardarNumero('.')">.</button>
+    <button onclick="igual()">=</button>
+    <br />
+
+
+    <h2>Exercicio 1</h2>
+    <h1>1. Verificar se o usuario está dormindo.</h1>
+
+    <input type="number" placeholder="Digite a hora">
+    <button onclick="sono()">Verificar horas</button>
+
+
+
 </body>
+
 </html>
