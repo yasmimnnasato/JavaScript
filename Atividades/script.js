@@ -113,7 +113,7 @@ function calcularValorTotal() {
     console.log('total com forma de pagamento:' + total);
     //calculat o valot do frete
     total += calcularFrete();
-    alert('Total da compra:R$'+total);
+    alert('Total da compra:R$' + total);
 }
 
 
@@ -148,7 +148,7 @@ function verificarCupomValido(valorCupom) {
 }
 
 function calcularFrete() {
-    const tipoFrete = parseInt (prompt('Escolha o tipo de frete \n 1- Frete Padrão \n 2- Frete Expresso'));
+    const tipoFrete = parseInt(prompt('Escolha o tipo de frete \n 1- Frete Padrão \n 2- Frete Expresso'));
     const FRETEPADRAO = 1, FRETEEXPRESSO = 2;
     switch (tipoFrete) {
         case FRETEPADRAO:
@@ -161,7 +161,7 @@ function calcularFrete() {
 
 
 function testeFor() {
-    for (let contador = 0; contador < 10; contador ++) {
+    for (let contador = 0; contador < 10; contador++) {
         console.log(contador);
     }
 }
@@ -175,31 +175,134 @@ function testeWhile() {
 }
 
 function atFor() {
-    for (let contador = 0; contador < 11; contador ++); {
+    for (let contador = 0; contador < 11; contador++); {
         console.log(contador);
     }
 }
 
 function atWhile() {
+    console.log('Números pares usando o for:');
     let contador = 0;
     while (contador < 10) {
         console.log(contador);
-        contador +=1;
+        contador += 1;
     }
 }
 
 function decrescenteFor() {
-    for (let contador = 10; contador > 0; contador --) {
+    console.log('Números decrecente usando o for:');
+    for (let contador = 10; contador > 0; contador--) {
         console.log(contador);
     }
 }
 
 function decrescenteWhile() {
+    console.log('Números decrescente usando o while:');
     let contador = 10;
     while (contador > 0) {
 
-   
+
         console.log(contador);
-        contador -=1; 
+        contador -= 1;
     }
+}
+
+function numerosParesFor() {
+    console.log('Números pares usando o for:');
+    for (let contador = 0; contador <= 10; contador += 2) {
+        console.log(contador);
+    }
+}
+
+function numerosParesWhile() {
+    console.log('Números pares usando o while:');
+    let contador = 0;
+    while (contador <= 10) {
+
+        console.log(contador);
+        contador += 2
+    }
+}
+
+function numerosImparesFor() {
+    console.log('Números impares usando o for:');
+    for (let contador = 1; contador <= 10; contador += 2) {
+        console.log(contador);
+    }
+}
+
+function numerosImparesWhile() {
+    console.log('Números impares usando o while:');
+    let contador = 1;
+    while (contador <= 10) {
+
+        console.log(contador);
+        contador += 2
+    }
+}
+
+function whileBreakEContinue() {
+    let numero = 0;
+    while (numero != 7) {
+        numero = prompt('Informe um número');
+        if (numero == 5) {
+            console.log('Achou um easter egg e pode sair do loop');
+            break;
+        } else if (numero == 3) {
+            console.log('Não imprime o número');
+            continue;
+        }
+        console.log(numero);
+    }
+}
+
+function notaZeroEDez() {
+    let numero = -1;
+    while (numero > 10 || numero < 0) {
+        numero = prompt('De uma nota de 0 a 10');
+
+        {
+            if (numero > 10 || numero < 0) console.log('Nota inválida');
+        }
+        console.log(numero)
+    }
+    alert('Sua nota foi aceita.')
+}
+
+function usuarioSenha() {
+    const usuario = 'yasmimcomM';
+    const senha = 'mimi';
+    let nomeDigitado = '';
+    let senhaDigitada = '';
+
+    while (nomeDigitado != usuario || senhaDigitada != senha) {
+        nomeDigitado = prompt('Escreva seu usuario')
+        senhaDigitada= prompt('Escreva sua senha')
+
+        if (nomeDigitado != usuario || senhaDigitada != senha)
+            console.log('Senha ou usuario invalido')
+
+        console.log(nomeDigitado, senhaDigitada)
+    }
+    alert('Usuario e senha validos.')
+}
+
+function palavras () {
+    const sair = 'sair';
+    let qualquerPalavra = '';
+
+    while (qualquerPalavra != sair) {
+        qualquerPalavra= prompt('Adivinhe a palavra')
+
+    if (qualquerPalavra.length <3) 
+       console.log(qualquerPalavra,"Palavra inavlida pois tem menos de 3 letras");  
+    continue 
+
+    if else  (!=sair) 
+        console.log('Saiu do loop, acertou a palavra')
+
+    break;
+    
+}
+
 }
