@@ -277,7 +277,7 @@ function usuarioSenha() {
 
     while (nomeDigitado != usuario || senhaDigitada != senha) {
         nomeDigitado = prompt('Escreva seu usuario')
-        senhaDigitada= prompt('Escreva sua senha')
+        senhaDigitada = prompt('Escreva sua senha')
 
         if (nomeDigitado != usuario || senhaDigitada != senha)
             console.log('Senha ou usuario invalido')
@@ -287,22 +287,57 @@ function usuarioSenha() {
     alert('Usuario e senha validos.')
 }
 
-function palavras () {
+function palavras() {
     const sair = 'sair';
     let qualquerPalavra = '';
 
     while (qualquerPalavra != sair) {
-        qualquerPalavra= prompt('Adivinhe a palavra')
+        qualquerPalavra = prompt('Adivinhe a palavra');
 
-    if (qualquerPalavra.length <3) 
-       console.log(qualquerPalavra,"Palavra inavlida pois tem menos de 3 letras");  
-    continue 
+        if (qualquerPalavra.length < 3) {
+            console.log(qualquerPalavra, "Palavra inavlida pois tem menos de 3 letras");
+            continue;
+        }
+        else if (qualquerPalavra == sair) {
+            console.log('Saiu do loop, acertou a palavra');
+            break;
+        }
+    }
 
-    if else  (!=sair) 
-        console.log('Saiu do loop, acertou a palavra')
 
-    break;
-    
 }
 
+function umDez() {
+    let array = [];
+    for (let contador = 0; contador < 10; contador++) {
+        array.push(prompt('Informe um número'));
+
+    }
+    console.log(array);
 }
+
+function realizarLoginUsuarios() {
+    const usuarios = ['yasmimcomM', 'adenilson123', 'alice321'];
+    const senhas = ['mimi', 'dd', '1234'];
+    let usuarioLogin = prompt('Informe seu usuário de login');
+    let senhaLogin = prompt('Informe sua senha');
+    let fezLogin = false;
+
+    for (let i = 0; i < usuarios.length; i++) {
+        if (usuarios[i] == usuarioLogin && senhas[i] == senhaLogin) {
+            fezLogin = true;
+            alert('Login realizado');
+            break;
+        }
+    }
+    if (!fezLogin) {
+        alert('Usuario ou senha inválidos.')
+    }
+}
+
+function contadorLetras () {
+    const palavras = ['gato', 'cachorro', 'elefante'];
+    palavras.forEach(letras => console.log (' A palavra '+letras+' tem '+letras.length+' letras '));
+}
+
+
