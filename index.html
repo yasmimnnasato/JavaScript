@@ -7,15 +7,29 @@
   <title>Atividade com Javascript</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js"> //Meu conteudo javascript-externo </script>
-  <script>
-    //Meu conteudo javascript-interno   
-  </script>
+
 </head>
 
 <body>
-  <h1>Bem-Vindo</h1>
-  <button onclick="alert('bem-vindo!')">Bem-vindo!</button>
-  <button onclick="alertar()">Checar promoções</button>
+
+  <br/>
+  <input type="text" id="campoTexto" placeholder="Digite um texto aqui">
+  <button onclick="alterarTexto ()">Enviar</button>
+  <div id="minhaDiv">
+    <p>Teste div com Javascript</p>
+  </div>
+  <br/>
+  <input type="numeber" id="resultadoConta" placeholder="Quanto é 2 + 2">
+  <button onclick="validarResultado ()">Enviar</button>
+  <div id="resultado">
+    <p>Resultado</p>
+  </div>
+
+<h2>Conatdor de clicks</h2>
+<button onclick=" contadorClicks ()">Contar</button>
+
+<p id="numeroZero">0</p>
+
 </body>
 
 </html>
