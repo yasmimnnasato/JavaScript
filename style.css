@@ -9,3 +9,19 @@ h1 {
 .erro {
     color: red
 }
+
+.escondido {
+    visibility: hidden;
+}
+
+.bt-escondido {
+background-color: grey;
+
+}
+
+.bt-mostrar {
+    background-color: rgb(218, 0, 0);
+    
+    }
+
+
